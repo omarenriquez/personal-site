@@ -1,0 +1,460 @@
+
+/* .d8888b.           888                        .d8888b.                888                   */
+/*d88P  Y88b          888                       d88P  Y88b               888                   */
+/*888    888          888                       888    888               888                   */
+/*888         .d88b.  888  .d88b.  888d888      888         .d88b.   .d88888  .d88b.  .d8888b  */
+/*888        d88""88b 888 d88""88b 888P"        888        d88""88b d88" 888 d8P  Y8b 88K      */
+/*888    888 888  888 888 888  888 888          888    888 888  888 888  888 88888888 "Y8888b. */
+/*Y88b  d88P Y88..88P 888 Y88..88P 888          Y88b  d88P Y88..88P Y88b 888 Y8b.          X88 */
+/* "Y8888P"   "Y88P"  888  "Y88P"  888           "Y8888P"   "Y88P"   "Y88888  "Y8888   88888P'*/
+
+/*Orange = #EF8354
+/*light Orange = #F7C1A9
+/*Dark Blue = #2d3142
+/*Off White = #F5FDFF
+
+
+
+
+/* .d8888b.                                             888      88888888888                         */
+/*d88P  Y88b                                            888          888                             */
+/*888    888                                            888          888                             */
+/*888         .d88b.  88888b.   .d88b.  888d888 8888b.  888          888   8888b.   .d88b.  .d8888b  */
+/*888  88888 d8P  Y8b 888 "88b d8P  Y8b 888P"      "88b 888          888      "88b d88P"88b 88K      */
+/*888    888 88888888 888  888 88888888 888    .d888888 888          888  .d888888 888  888 "Y8888b. */
+/*Y88b  d88P Y8b.     888  888 Y8b.     888    888  888 888          888  888  888 Y88b 888      X88 */
+/* "Y8888P88  "Y8888  888  888  "Y8888  888    "Y888888 888          888  "Y888888  "Y88888  88888P' */
+/*                                                                                      888          */
+/*                                                                                 Y8b d88P          */
+/*                                                                                  "Y88P"*/
+
+body {
+  margin: 0;
+  background-color:#2d3142;
+  font-family: 'Varela';
+}
+
+h1 {
+  /*font-size: 50px;*/
+  font-size: 8vmin;
+  font-family: "Comfortaa";
+}
+
+h2 {
+  /*font-size: 40px;*/
+  font-size: 5.5vmin;
+  font-family: "Varela";
+  color: #EF8354;
+}
+
+h3 {
+  font-size: 4vmin;
+}
+
+h4 {
+  font-size: 3vmin;
+  margin: 0 10%;
+  text-align: left;
+  color: #EF8354;
+}
+
+
+li{
+  /*font-size: 2.5vmin;*/
+  /*color: #F5FDFF;*/
+  list-style: none;
+  font-size: 2.5vmin;
+  margin: 0 10%;
+  text-align: left;
+  color: #F5FDFF;
+}
+
+li::before {
+  content: '➤  ';
+}
+
+/*General Styles*/
+
+.orange-text {
+  color: #EF8354;
+}
+
+
+
+/*888b    888                   d8b                   888    d8b                        888888b.                    */
+/*8888b   888                   Y8P                   888    Y8P                        888  "88b                   */
+/*88888b  888                                         888                               888  .88P                   */
+/*888Y88b 888  8888b.  888  888 888  .d88b.   8888b.  888888 888  .d88b.  88888b.       8888888K.   8888b.  888d888 */
+/*888 Y88b888     "88b 888  888 888 d88P"88b     "88b 888    888 d88""88b 888 "88b      888  "Y88b     "88b 888P"   */
+/*888  Y88888 .d888888 Y88  88P 888 888  888 .d888888 888    888 888  888 888  888      888    888 .d888888 888     */
+/*888   Y8888 888  888  Y8bd8P  888 Y88b 888 888  888 Y88b.  888 Y88..88P 888  888      888   d88P 888  888 888     */
+/*888    Y888 "Y888888   Y88P   888  "Y88888 "Y888888  "Y888 888  "Y88P"  888  888      8888888P"  "Y888888 888     */
+/*                                       888                                                                        */
+/*                                  Y8b d88P                                                                        */
+/*                                   "Y88P"*/
+
+#navigation-bar-top{
+  overflow: hidden;
+  background-color: #ef8354;
+  border-radius: 0 0 15px 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50vmin;
+  padding: 10px 0;
+  z-index: 1;
+  box-shadow: 0px 3px 5px black;
+}
+
+#navigation-bar-top a {
+  display: block;
+  color: #F5FDFF;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 8px;
+  /*font-size: 15px;*/
+  font-size: 3vmin;
+}
+
+#navigation-bar-top a:hover {
+  color: #2d3142;
+}
+
+
+
+/* .d8888b.                    888                      888         888b     d888                .d8888b.                    888    d8b                            */
+/*d88P  Y88b                   888                      888         8888b   d8888               d88P  Y88b                   888    Y8P                            */
+/*888    888                   888                      888         88888b.d88888               Y88b.                        888                                   */
+/*888         .d88b.  88888b.  888888  8888b.   .d8888b 888888      888Y88888P888  .d88b.        "Y888b.    .d88b.   .d8888b 888888 888  .d88b.  88888b.  88888b.  */
+/*888        d88""88b 888 "88b 888        "88b d88P"    888         888 Y888P 888 d8P  Y8b          "Y88b. d8P  Y8b d88P"    888    888 d88""88b 888 "88b 888 "88b */
+/*888    888 888  888 888  888 888    .d888888 888      888         888  Y8P  888 88888888            "888 88888888 888      888    888 888  888 888  888 888  888 */
+/*Y88b  d88P Y88..88P 888  888 Y88b.  888  888 Y88b.    Y88b.       888   "   888 Y8b.          Y88b  d88P Y8b.     Y88b.    Y88b.  888 Y88..88P 888  888 888  888 */
+/* "Y8888P"   "Y88P"  888  888  "Y888 "Y888888  "Y8888P  "Y888      888       888  "Y8888        "Y8888P"   "Y8888   "Y8888P  "Y888 888  "Y88P"  888  888 888  888*/
+
+.contact-me-section {
+  /*text-align: center;*/
+  position: fixed;
+  justify-content: center;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50vmin;
+  background-color: #ef8354;
+  /*color: white;*/
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0px -3px 5px black;
+  height: 40px;
+}
+
+
+
+.social-media-icon {
+  color: #F5FDFF;
+  margin: 0 25px;
+}
+
+.social-media-icon:hover {
+  color: #2d3142;
+  /*border: 2px solid red;*/
+  /*margin: 10px 15px;*/
+}
+
+
+
+/* .d8888b.                       888 */
+/*d88P  Y88b                      888 */
+/*888    888                      888 */
+/*888         8888b.  888d888 .d88888 */
+/*888            "88b 888P"  d88" 888 */
+/*888    888 .d888888 888    888  888 */
+/*Y88b  d88P 888  888 888    Y88b 888 */
+/* "Y8888P"  "Y888888 888     "Y88888*/
+
+#card-section {
+  background-color: #F5FDFF;
+  border-radius: 30px;
+  padding: 30px 100px;
+  margin: 70px 3%;
+  text-align: center;
+  box-shadow: 3px 3px 10px black;
+}
+
+
+/*88888888888 d8b 888    888                .d8888b.                    888    d8b                   */
+/*    888     Y8P 888    888               d88P  Y88b                   888    Y8P                   */
+/*    888         888    888               Y88b.                        888                          */
+/*    888     888 888888 888  .d88b.        "Y888b.    .d88b.   .d8888b 888888 888  .d88b.  88888b.  */
+/*    888     888 888    888 d8P  Y8b          "Y88b. d8P  Y8b d88P"    888    888 d88""88b 888 "88b */
+/*    888     888 888    888 88888888            "888 88888888 888      888    888 888  888 888  888 */
+/*    888     888 Y88b.  888 Y8b.          Y88b  d88P Y8b.     Y88b.    Y88b.  888 Y88..88P 888  888 */
+/*    888     888  "Y888 888  "Y8888        "Y8888P"   "Y8888   "Y8888P  "Y888 888  "Y88P"  888  888*/
+
+.profile-pic {
+  /*border: 3px solid #EF8354;*/
+  border-radius: 300px;
+  width: 40vmin;
+  
+}
+
+.personal-intro {
+  margin: 30px 0;
+}
+
+.tagline-text{
+  position: relative;
+  border-top: 1px solid #EF8354;
+  background-color: #F5FDFF;
+  bottom: 30px;
+  width: 60vmin;
+  /*font-size: 30px;*/
+  font-size: 3.5vmin;
+  padding: 15px 0 0 0;
+  /*margin: 0 35% 15px;*/
+  margin: 0 auto 15px;
+  line-height: 2;
+}
+
+.down-arrow {
+  color: #F7C1A9;
+  font-size: 8vmin;
+  margin-top: 50px;
+}
+
+.resume-button {
+  color: #EF8354;
+  border-radius: 10px;
+  font-size: 2.5vmin;
+  margin: 0 auto 20px;
+  padding: 1vmin 3vmin;
+  background-color: #F5FDFF;
+  border: 1px solid #EF8354;
+}
+
+.resume-button:hover {
+  background-color: #EF8354;
+  color: #F5FDFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/*       d8888 888                        888         888b     d888                .d8888b.                    888    d8b                   */
+/*      d88888 888                        888         8888b   d8888               d88P  Y88b                   888    Y8P                   */
+/*     d88P888 888                        888         88888b.d88888               Y88b.                        888                          */
+/*    d88P 888 88888b.   .d88b.  888  888 888888      888Y88888P888  .d88b.        "Y888b.    .d88b.   .d8888b 888888 888  .d88b.  88888b.  */
+/*   d88P  888 888 "88b d88""88b 888  888 888         888 Y888P 888 d8P  Y8b          "Y88b. d8P  Y8b d88P"    888    888 d88""88b 888 "88b */
+/*  d88P   888 888  888 888  888 888  888 888         888  Y8P  888 88888888            "888 88888888 888      888    888 888  888 888  888 */
+/* d8888888888 888 d88P Y88..88P Y88b 888 Y88b.       888   "   888 Y8b.          Y88b  d88P Y8b.     Y88b.    Y88b.  888 Y88..88P 888  888 */
+/*d88P     888 88888P"   "Y88P"   "Y88888  "Y888      888       888  "Y8888        "Y8888P"   "Y8888   "Y8888P  "Y888 888  "Y88P"  888  888*/
+
+.about-me-section {
+  text-align: left;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.about-me-text {
+  padding: 0 50px;
+  font-size: 3vmin;
+  line-height: 2.2;
+  margin-bottom: 5%;
+}
+
+.interests-icons {
+  padding: 0 50px;
+  text-align: center;
+}
+
+
+.hobby-icon {
+  color: #2d3142;
+}
+
+.interests-icons div p {
+  margin: 15px 1% 5px;
+  font-size: 2.5vmin;
+}
+
+
+
+/*888b     d888               8888888888                                    d8b                                          .d8888b.                    888    d8b                   */
+/*8888b   d8888               888                                           Y8P                                         d88P  Y88b                   888    Y8P                   */
+/*88888b.d88888               888                                                                                       Y88b.                        888                          */
+/*888Y88888P888 888  888      8888888    888  888 88888b.   .d88b.  888d888 888  .d88b.  88888b.   .d8888b .d88b.        "Y888b.    .d88b.   .d8888b 888888 888  .d88b.  88888b.  */
+/*888 Y888P 888 888  888      888        `Y8bd8P' 888 "88b d8P  Y8b 888P"   888 d8P  Y8b 888 "88b d88P"   d8P  Y8b          "Y88b. d8P  Y8b d88P"    888    888 d88""88b 888 "88b */
+/*888  Y8P  888 888  888      888          X88K   888  888 88888888 888     888 88888888 888  888 888     88888888            "888 88888888 888      888    888 888  888 888  888 */
+/*888   "   888 Y88b 888      888        .d8""8b. 888 d88P Y8b.     888     888 Y8b.     888  888 Y88b.   Y8b.          Y88b  d88P Y8b.     Y88b.    Y88b.  888 Y88..88P 888  888 */
+/*888       888  "Y88888      8888888888 888  888 88888P"   "Y8888  888     888  "Y8888  888  888  "Y8888P "Y8888        "Y8888P"   "Y8888   "Y8888P  "Y888 888  "Y88P"  888  888 */
+/*                   888                          888                                                                                                                             */
+/*              Y8b d88P                          888                                                                                                                             */
+/*               "Y88P"                           888*/
+               
+.work-experience-section {
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #2d3142;
+}
+
+.work-experience-section .companies{
+  text-align: left;
+  padding: 0 25px;
+}
+
+.companies p {
+  color: #4c536f;
+  font-size: 3vmin;
+  line-height: 1.5;
+}
+
+.job-description {
+  margin-left: 25px;
+}
+
+
+/* .d8888b.  888      d8b 888 888                .d8888b.                    888    d8b                   */
+/*d88P  Y88b 888      Y8P 888 888               d88P  Y88b                   888    Y8P                   */
+/*Y88b.      888          888 888               Y88b.                        888                          */
+/* "Y888b.   888  888 888 888 888 .d8888b        "Y888b.    .d88b.   .d8888b 888888 888  .d88b.  88888b.  */
+/*    "Y88b. 888 .88P 888 888 888 88K               "Y88b. d8P  Y8b d88P"    888    888 d88""88b 888 "88b */
+/*      "888 888888K  888 888 888 "Y8888b.            "888 88888888 888      888    888 888  888 888  888 */
+/*Y88b  d88P 888 "88b 888 888 888      X88      Y88b  d88P Y8b.     Y88b.    Y88b.  888 Y88..88P 888  888 */
+/* "Y8888P"  888  888 888 888 888  88888P'       "Y8888P"   "Y8888   "Y8888P  "Y888 888  "Y88P"  888  888*/
+
+.language-skills-subsection, .tools-skills-subsection, .soft-skills-subsection {
+  padding: 0 50px;
+  text-align: center;
+}
+
+.language-skills-subsection div, .tools-skills-subsection div, .soft-skills-subsection div {
+  color: #2d3142;
+  padding-top: 15px;
+}
+
+.my-skills {
+  padding: 0 25px;
+}
+
+.my-skills-section {
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #2d3142;
+}
+
+.my-skills-section .skills-divider {
+  color: #F7C1A9;
+  text-align: center;
+}
+
+
+/*8888888b.                        888     888                .d8888b.                       888 */
+/*888   Y88b                       888     888               d88P  Y88b                      888 */
+/*888    888                       888     888               888    888                      888 */
+/*888   d88P .d88b.  88888b.       888     888 88888b.       888         8888b.  888d888 .d88888 */
+/*8888888P" d88""88b 888 "88b      888     888 888 "88b      888            "88b 888P"  d88" 888 */
+/*888       888  888 888  888      888     888 888  888      888    888 .d888888 888    888  888 */
+/*888       Y88..88P 888 d88P      Y88b. .d88P 888 d88P      Y88b  d88P 888  888 888    Y88b 888 */
+/*888        "Y88P"  88888P"        "Y88888P"  88888P"        "Y8888P"  "Y888888 888     "Y88888 */
+/*                   888                       888                                               */
+/*                   888                       888                                               */
+/*                   888                       888*/
+                   
+.pop-up-card {
+  /*visibility: hidden;*/
+  position: fixed;
+  background-color: #2d3142;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 30px;
+  padding: 30px 30px;
+  margin: auto ;
+  text-align: center;
+  box-shadow: 3px 3px 10px black;
+  height: 60vmin;
+  width: 80%;
+  color: #F5FDFF;
+}
+
+.hidden {
+  display: none;
+  /*transition: opacity 500 eas-in-out;*/
+}
+
+.details p {
+  font-size: 4vmin;
+}
+
+p a {
+  font-size: 2.5vmin;
+  margin: 0 10%;
+  text-decoration: none;
+  color: #F5FDFF;
+}
+
+.traveling-detail-pics {
+  width: 100%;
+}
+.bujo-detail-pics {
+  width: 50%;
+  /*width: 50%;*/
+}
+
+.close-pop-up {
+  text-align: right;
+  color: #EF8354;
+}
+
+
+
+/* .d8888b.                            888                 888 */
+/*d88P  Y88b                           888                 888 */
+/*888    888                           888                 888 */
+/*888        888d888 888  888 88888b.  888888 .d88b.   .d88888 */
+/*888        888P"   888  888 888 "88b 888   d8P  Y8b d88" 888 */
+/*888    888 888     888  888 888  888 888   88888888 888  888 */
+/*Y88b  d88P 888     Y88b 888 888 d88P Y88b. Y8b.     Y88b 888 */
+/* "Y8888P"  888      "Y88888 88888P"   "Y888 "Y8888   "Y88888 */
+/*                        888 888                              */
+/*                   Y8b d88P 888                              */
+/*                    "Y88P"  888*/
+
+/*Crypted Mail for not exposing email to spammers*/
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
+
+
+/*888b     d888               888 d8b                .d8888b.                                             */
+/*8888b   d8888               888 Y8P               d88P  Y88b                                            */
+/*88888b.d88888               888                   Y88b.                                                 */
+/*888Y88888P888  .d88b.   .d88888 888  8888b.        "Y888b.    .d8888b 888d888 .d88b.   .d88b.  88888b.  */
+/*888 Y888P 888 d8P  Y8b d88" 888 888     "88b          "Y88b. d88P"    888P"  d8P  Y8b d8P  Y8b 888 "88b */
+/*888  Y8P  888 88888888 888  888 888 .d888888            "888 888      888    88888888 88888888 888  888 */
+/*888   "   888 Y8b.     Y88b 888 888 888  888      Y88b  d88P Y88b.    888    Y8b.     Y8b.     888  888 */
+/*888       888  "Y8888   "Y88888 888 "Y888888       "Y8888P"   "Y8888P 888     "Y8888   "Y8888  888  888*/
+
+@media screen and (max-width: 700px) {
+  #navigation-bar {
+    display: block;
+    padding: 3px 5px;
+  }
+  #navigation-bar a {
+    padding: 2px 0;
+    font-size: 14px;
+  }
+  
+}
